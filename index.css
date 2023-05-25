@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'AlanaPro';
+    src: url("./fonts/Alana_Pro_RUS.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Gardens';
+    src: url("./fonts/gardensC/GardensC_03_1.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./fonts/Gilroy/Gilroy-Light.otf") format("opentype");
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 244, 251);
+}
+
+.box {
+    background-color: #fff;
+}
+
+header {
+    background-image: url("/images/back2.jpg");
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+h1 {
+    font-family: "AlanaPro";
+    color: rgb(61, 58, 59);
+    font-size: 5rem;
+}
+h4 {
+    font-family: "AlanaPro";
+}
+
+h2 {
+    font-family: "Gardens";
+}
+
+nav,
+p {
+    font-family: 'Gilroy';
+}
+
+.header_title::after {
+    content: '';
+    background-color: rgb(75, 75, 80);
+    height: 3px;
+    width: 30%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 34%;
+}
+
+.data {
+    font-size: 3rem;
+}
+
+.timeline-img {
+    max-width: 100%;
+}
+
+.main_img {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 0;
+}
+
+.top_title::after {
+    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width: 87%;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;              /* абсолютное позиционирование для управления линиями */
+    border-bottom: 1px solid #d4cdcd;   /* бордер псевдо дива, т.е. сама линия */
+    top: 8%;                                 /* позиционирование по вертикали */
+    left: 6.6%;
+    z-index: 1;                         /* позиционирование по горизонтали слева */
+}
+
+.menu__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.menu__list a {
+    color: #16458b;
+    text-decoration: none;
+}
+
+.menu__list a:hover {
+    color: #1D1D1D;
+    text-decoration: underline 2px #153793;
+}
+
+.menu__list li  {
+    list-style-type: none;
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted rgb(168, 51, 88);
+        width: 3.46rem;
+        position: absolute;
+        left: 9.5rem;
+        top: 4.3125rem
+    }
+
+    .timeline-steps .timeline-step:not(:first-child):before {
+        /* content: ""; */
+        display: block;
+        border-top: .25rem dotted rgb(168, 51, 88);
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: 4.3125rem;
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    /* height: 1rem; */
+    width: 90%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        width: 100%;
+    }
+
+    .header-menu {
+        overflow-y: hidden;
+    }
+
+    .menu__list {
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-top: 2%;
+        padding-bottom: 1%;    
+    }
+
+    .menu__item {
+        padding: 0.5rem 0.6rem;
+    }
+}
+
+.footer-contacts__icon {
+    font-size: 2.5rem;
+    padding-right: 0.8vw;
+    color: #6575cb;
+}
+
+.footer__link {
+    text-decoration: none;
+}
