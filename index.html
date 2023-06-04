@@ -3,56 +3,87 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="./images/free-icon-wedding-ring-4155803.png">
+<link rel="shortcut icon" href="./images/icon-wedding-ring.png">
 <link rel="normalize" href="normalize.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/style/iconfonts.css">
 <link rel="stylesheet" href="index.css">
-
 <script src="https://kit.fontawesome.com/722069af4d.js" crossorigin="anonymous"></script>
 <title>Cвадьба Ромы и Тани</title>
 </head>
 
 <body>
-    <div class="container text-center pt-3 pb-1 box">
-        <h4 class="top_title">Свадьба Романа и Татьяны</h4>
-    </div>
-    <nav class="container header-menu box">
-            <ul class="menu__list  me-auto mb-2 mb-lg-0">
-                <li class="menu__item ">
-                    <a href="#area" class="menu__link ">О площадке</a>
-                </li>
-                <li class="menu__item nav-item">
-                    <a href="#transfer" class="menu__link ">Как добраться</a>
-                </li>
-                <li class="menu__item nav-item">
-                    <a href="#timeline" class="menu__link ">Расписание</a>
-                </li>
-                <li class="menu__item nav-item">
-                    <a href="#help" class="menu__link ">Подсказки и пожелания</a>
-                </li>
-                <li class="menu__item nav-item">
-                    <a href="#contacts" class="menu__link ">Контакты</a>
-                </li>
-            </ul>
+    <nav class="container box navbar navbar-expand-lg d-flex justify-content-center navbar__big">
+        <ul class="navbar-nav fme-auto mb-2 mb-lg-0 d-flex">
+            <li class="menu__item nav-item">
+                <a href="#area" class="nav-link" data-item='О площадке'>О площадке</a>
+            </li>
+            <li class="menu__item nav-item">
+                <a href="#transfer" class="nav-link" data-item='Как добраться'>Как добраться</a>
+            </li>
+            <li class="menu__item nav-item">
+                <a href="#timeline" class="nav-link" data-item='Расписание'>Расписание</a>
+            </li>
+            <li class="menu__item nav-item">
+                <a href="#help" class="nav-link" data-item='Подсказки и пожелания'>Подсказки и пожелания</a>
+            </li>
+            <li class="menu__item nav-item">
+                <a href="#contacts" class="nav-link" data-item='Контакты'>Контакты</a>
+            </li>
+        </ul>
     </nav>
 
-    <header class="container d-flex justify-content-center align-items-center text-center box">
-        <div class="row ">
-            <div class="col-12 ">
+
+    <header class="container gx-0 d-flex justify-content-center align-items-center text-center box pb-5">
+        <div class="row gx-0">
+
+            <div class="dots__body col-12 text-end">
+                <div class="dots d-flex align-items-center" onclick="this.classList.toggle('active');">
+                    <span><i class="fa-solid fa-bars fa-lg"></i></span>
+                    <div class="container__drop">
+                        <div class="drop"></div>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="menu__item">
+                                <a href="#area" class="nav-link" data-item='О площадке'>О площадке</a>
+                            </li>
+                            <li class="menu__item nav-item">
+                                <a href="#transfer" class="nav-link" data-item='Как добраться'>Как добраться</a>
+                            </li>
+                            <li class="menu__item nav-item">
+                                <a href="#timeline" class="nav-link" data-item='Расписание'>Расписание</a>
+                            </li>
+                            <li class="menu__item nav-item">
+                                <a href="#help" class="nav-link" data-item='Подсказки и пожелания'>Подсказки и
+                                    пожелания</a>
+                            </li>
+                            <li class="menu__item nav-item">
+                                <a href="#contacts" class="nav-link" data-item='Контакты'>Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cursor" onclick="document.querySelector('.dots').classList.toggle('active');"></div>
+            </div>
+            <img src="images/08e2ef4e-726a-427f-93d3-8e7b89231223.png" class="img1" />
+            <div class="col-12 title__box">
                 <h1 class="mb-5 header_title">Роман <br> и <br> Татьяна</h1>
-                <h1 class="data">06.08.2023</h1>
+                <h1 class="data">06 августа 2023</h1>
             </div>
         </div>
     </header>
 
-                <!-- <div class="col-12">
-                Этот замечательный день мы хотим провести с вами, нашими самыми дорогими людьми! 
-            </div> -->
-    <main class="container box">
-        <div class="row align-items-center text-center justify-content-center" id="area">
-            <h2>Информация о площадке</h2>
+    <div class="container d-flex justify-content-center box pt-3 pb-3">
+        <div class="image_box">
+            <img src="images/cfa49321-0626-4316-9fe4-68d6a7a35fdb.png" />
+        </div>
+    </div>
+
+    <main class="container box pt-5 gx-0">
+        <div class="row gx-0 align-items-center text-center justify-content-center" id="area">
+            <h2 class="pb-3 pt-3">Информация о площадке</h2>
             <div class="col-9">
                 <p>
                     Наш праздник пройдет на природе, в просторном шатре "Сосновый бор", который расположен на берегу
@@ -60,123 +91,215 @@
                     вдали от городского шума в окружении живописной природы.
                 </p>
             </div>
-        </div>
 
-        <div class="row align-items-center text-center justify-content-center" id="transfer">
-            <h2>Как добраться</h2>
-            <div class="col-9">
-                <p>
-                    Для вашего удобства будет организован трансфер недалеко от метро Медведково. Пожалуйста, сообщите заранее, если он
-                    вам понадобится.
-                </p>
-                <p>Время отправления трансфера 14:00</p>
-                <p>Если вы заблудились, готовите сюрприз или у вас появились какие-либо вопросы, вам с рабостью поможет
-                    наш замечательный организатор Марина, телефон для связи: +7 (926) 045-16-35</p>
-                <p> Если же вы предпочтеле добраться до площадки самостоятельно, пожалуйста, сообщите Марине марку и
-                    номер машины, на которой вы приедете.</p>
+        </div>
+        <div class="container d-flex justify-content-center box pt-3 pb-3">
+            <div class="col-12 image_box">
+                <img src="images/cfa49321-0626-4316-9fe4-68d6a7a35fdb.png" />
             </div>
         </div>
-
-        <div class="row text-center justify-content-center" id="timeline">
+        <div class="row align-items-center text-center justify-content-center mt-3 gx-0" id="transfer">
+            <h2 class="pb-3 pt-3">Как добраться</h2>
             <div class="col-9">
-                <h2>Расписание свадебного дня</h2>
+                <p>
+                    Для вашего удобства будет организован трансфер (автобус до места проведения праздника) недалеко от
+                    <a href="https://yandex.ru/maps/-/CCUwJYxHCD">метро Медведково</a> по адресу: ул. Широкая
+                    2а (парковка гипермаркета <a href="https://yandex.ru/maps/-/CCUwJ4F9~C">"Глобус"</a>).
+                <p><strong>Пожалуйста, сообщите заранее, если он вам понадобится.</strong></p>
+                </p>
+                <p>Время отправления автобуса 14:30</p>
+                <p>Если вы заблудились, готовите сюрприз или у вас появились какие-либо вопросы, вам с радостью поможет
+                    наш замечательный организатор Марина.</p>
+                <p> Телефон Марины для связи: +7 (926) 045-16-35</p>
+                <p> Если же вы планируете добраться до площадки самостоятельно, пожалуйста, сообщите Марине марку и
+                    номер машины, на которой вы приедете.</p>
+            </div>
+
+        </div>
+        <div class="container d-flex justify-content-center box pt-3 pb-3">
+            <div class="row image_box gx-0">
+                <img src="images/cfa49321-0626-4316-9fe4-68d6a7a35fdb.png" />
+            </div>
+        </div>
+        <div class="row text-center justify-content-center pt-3 pb-2 gx-0" id="timeline">
+            <div class="col-9">
+                <h2 class="pb-3 pt-3">Расписание свадебного дня</h2>
                 <p class="text-muted">Здесь вы можете ознакомиться с примерным планом нашего дня.</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top"
-                            title="" 
-                            data-original-title="2003">
-                            <div class="inner-circle">
-                                <img class="timeline-img" src="images/welcome.png">
-                            </div>
-                            <p class="h6 mt-3 mb-1">15:00</p>
-                            <p class="h6 text-muted mb-0 mb-lg-0">Сбор гостей, приветственный фуршет</p>
+        <div class="container">
+            <div class="main-timeline">
+
+                <!-- start experience section-->
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">15:30</span>
+                                <span class="year"><img class="timeline-img" width="10%"
+                                        src="images/wedding-arch.png"></span>
+                            </span>
                         </div>
                     </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top"
-                            title="" 
-                            data-original-title="2004">
-                            <div class="inner-circle">
-                                <img class="timeline-img" src="images/Ceremony.jpg">
-                            </div>
-                            <p class="h6 mt-3 mb-1">16:00</p>
-                            <p class="h6 text-muted mb-0 mb-lg-0">Церемония</p>
+                    <div class="timeline-content">
+                        <p class="description pt-4">
+                            Сбор гостей <br> Приветственный фуршет
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">16:30</span>
+                                <span class="year"><img class="timeline-img" width="9%"
+                                        src="images/icon-wedding-ring.png"></span>
+                            </span>
                         </div>
                     </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top"
-                            title="" 
-                            data-original-title="2005">
-                            <div class="inner-circle">
-                                <img class="timeline-img" src="images/Dinner.jpg">
-                            </div>
-                            <p class="h6 mt-3 mb-1">17:00</p>
-                            <p class="h6 text-muted mb-0 mb-lg-0">Начинаем банкет</p>
+                    <div class="timeline-content">
+                        <p class="description pt-4">
+                            Церемония <br> бракосочетания
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">17:30</span>
+                                <span class="year"><img class="timeline-img" width="9%"
+                                        src="images/romantic-dinner.png"></span>
+                            </span>
                         </div>
                     </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top"
-                            title=""
-                            data-original-title="2010">
-                            <div class="inner-circle">
-                                <img class="timeline-img" src="images/Cake.jpg">
-                            </div>
-                            <p class="h6 mt-3 mb-1">20:00</p>
-                            <p class="h6 text-muted mb-0 mb-lg-0">Торт!</p>
+                    <div class="timeline-content">
+                        <p class="description pt-4">
+                            Начинаем <br>банкетную программу
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">20:00</span>
+                                <span class="year"><img class="timeline-img" width="9%"
+                                        src="images/Cake (2).png"></span>
+                            </span>
                         </div>
                     </div>
-                    <div class="timeline-step mb-0">
-                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top"
-                            title="" data-content="And here's some amazing content. It's very engaging. Right?"
-                            data-original-title="2020">
-                            <div class="inner-circle">
-                                <img class="timeline-img" src="images/Party.jpg">
-                            </div>
-                            <p class="h6 mt-3 mb-1">20:30</p>
-                            <p class="h6 text-muted mb-0 mb-lg-0">Танцы!</p>
+                    <div class="timeline-content">
+                        <p class="description pt-4">
+                            Торт!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">20:30</span>
+                                <span class="year"><img class="timeline-img" width="9%"
+                                        src="images/confetti.png"></span>
+                            </span>
                         </div>
                     </div>
+                    <div class="timeline-content">
+                        <p class="description pt-4">
+                            Веселимся и <br> танцуем!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">23:00</span>
+                                <span class="year"><img class="timeline-img" width="9%"
+                                        src="images/just-married (1).png"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="description pt-5">
+                            Финал
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center box pt-3 pb-3 gx-0">
+                <div class="col-12 image_box">
+                    <img src="images/cfa49321-0626-4316-9fe4-68d6a7a35fdb.png" />
                 </div>
             </div>
         </div>
 
-        <div class="row align-items-center text-center justify-content-center" id="help">
-            <h2>Подсказки и пожелания</h2>
+
+        <div class="row p-o align-items-center text-center justify-content-center gx-0" id="help">
+            <h2 class="pt-3 pb-3">Подсказки и пожелания</h2>
             <div class="col-9">
                 <p>
-                    Не ломайте голову над подарками, для нас главное ваше присутствие. А ваши пожелания в конвертах
-                    помогут нам осуществить наши мечты.
+                    Не ломайте голову над подарками! Ведь главное для нас - ваше присутствие, а ваши пожелания в
+                    конвертах
+                    помогут нам осуществить наши цели и мечты.
                 </p>
-                <p> Пожалуйста, не обременяйте себя покупкой красивого букета цветов, сразу после свадьбы мы собираемся
-                    уехать, и не успеем забрать их домой и насладиться ими до отъезда.
+                <p> Пожалуйста, не обременяйте себя покупкой красивого букета цветов, так как после свадьбы мы планируем
+                    отправиться в путешествие и не успеем насладиться ими до отъезда.
                 </p>
                 <p>
-                    Нам бы хотелось сделать этот день добрым, уютным и красивым семейным праздником, поэтому мы просим
-                    вас не злоупотреблять криками "Горько!"
+                    Вы поможете нам сделать этот день атмосферным и уютным семейным праздником, если не будете
+                    злоупотреблять криками "Горько!". <br>Ведь поцелуй - это знак выражения чувств, и он не может быть
+                    по заказу.
                 </p>
             </div>
         </div>
+        <div class="col-12 text-center mt-5 slogan__box">
+            <h1>Увидимся!</h1>
+        </div>
+
+        <img src="images/7118bd13-1083-497f-a01b-7aa0d395b3b9.png" class="img1" />
     </main>
 
-    <footer class="container box">
-        <div class="row">
+    <footer class="container box pt-5" id="contacts">
+        <div class="row gx-0">
+            <h2 class="pt-3 pb-3">Контакты</h2>
+
+            <div class="col-12 col-xl-6">
+                <h4 class="mb-2">Площадка:</h4>
+                <p>Шатер "Сосновый бор", Горки Холидей </p>
+                <p>Московская область, вблизи деревни Ульянково </p>
+                <h4 class="mb-4">Контакты организатора Марины:</р>
+                    <p class="mt-4">+7 (926) 045-16-35</p>
+                    <div class="mt-4">
+                        <a href="https://web.telegram.org/a/#1170962868" target="_blank" class="footer__link">
+                            <i class="fa-brands fa-telegram footer-contacts__icon"></i> &nbsp;
+                        </a>
+                        <a href="https://wa.me/79260451635" target="_blank" class="footer__link">
+                            <i class="fa-brands fa-whatsapp footer-contacts__icon" style="color: #2d912b;"></i>
+                            &nbsp;
+                        </a>
+                    </div>
+            </div>
+
             <div class="col-12 col-xl-6">
                 <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=37.691815%2C55.992954&mode=search&oid=6567760683&ol=biz&z=16"
-                    width="550" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-            </div>
-            <div class="col-12 col-xl-6">
-                Организатор Марина
-                    <a href="https://wa.me/79260451635" target="_blank" class="footer__link"><i
-                            class="fa-brands fa-telegram footer-contacts__icon"></i> &nbsp;
-                    </a>
-
+                    src="https://yandex.ru/map-widget/v1/?ll=37.698201%2C55.990780&mode=search&oid=6567760683&ol=biz&z=15"
+                    width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </footer>
