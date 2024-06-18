@@ -23,8 +23,18 @@ $text-color: rgb(75, 69, 71);
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+}
+
 .box {
     background-color: #F9F8F2;
+    width: 100%;
+    min-width: 320px;
 }
 
 .img1 {
@@ -91,9 +101,11 @@ p {
 
     a {
         color: #143b75;
+
         &:hover {
             transform: scaleX(1);
             transition: transform 0.3s;
+
             &::after {
                 background-color: #d0b785;
                 content: '';
@@ -109,7 +121,7 @@ p {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     iframe {
         width: 100%;
     }
@@ -127,7 +139,6 @@ p {
         height: 0;
         padding: 0;
         margin: auto;
-
     }
 
     .dots__body {
@@ -140,6 +151,7 @@ p {
         z-index: 300;
         font-family: 'Gardens';
         position: absolute;
+        right: 5%;
     }
 
     .dots {
@@ -156,7 +168,7 @@ p {
         display: flex;
         height: 305px;
         justify-content: center;
-        left: 50%;
+        left: 60%;
         overflow: hidden;
         position: absolute;
         transform: translateX(-50%);
@@ -178,7 +190,7 @@ p {
     }
 
     .list {
-        left: 47%;
+        left: 57%;
         position: absolute;
         transform: translateX(-50%);
         top: 100px;
@@ -251,6 +263,12 @@ p {
         position: absolute;
         top: 125px;
         width: 80px;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 576px) {
+    .dots__body {
+        right: 5%;
     }
 }
 
